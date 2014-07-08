@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/server_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_server_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:hint="192.168.0.1"
+        android:text="192.168.0.102"
+        android:ems="20" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_set_server_address"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/server_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:onClick="onBtnClick"
+        android:text="设置" />
+
+    <TextView
+        android:id="@+id/set_server_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="设置服务器地址"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
